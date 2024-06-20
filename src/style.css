@@ -1,0 +1,149 @@
+/* CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* --- */
+
+/* fonts */
+@font-face {
+    font-family: 'pacifico';
+    src: url('./fonts/Pacifico-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- */
+body {
+    background: url('./home-background.jpg') rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-blend-mode: multiply;
+    font-family: 'Montserrat', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#content {
+    width: 100%;
+    height: 90vh;
+}
+
+/* nav */
+header {
+    text-align: center;
+    height: 10vh;
+}
+
+nav {
+    padding: 2rem 2rem;
+}
+
+.nav-button {
+    border: none;
+    background: none;
+    color: white;
+    margin: 0rem 0.5rem;
+}
+
+.nav-button:hover {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+}
+
+.nav-button:active {
+    font-weight: normal;
+    border-bottom: none;
+    padding-bottom: 0rem;
+}
+
+/* home page */
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    font-family: 'pacifico';
+}
+
+.home p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#order-now {
+    background-color: white;
+    color: #C23B22;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+#order-now svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 0.5rem;
+    fill: #C23B22;
+}
+
+#order-now:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .8), inset -1px -1px 1px rgba(255, 255, 255, .4);
+}
