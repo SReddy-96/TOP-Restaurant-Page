@@ -74,7 +74,7 @@ body {
 
 #content {
     width: 100%;
-    height: 90vh;
+    height: 100%;
 }
 
 /* nav */
@@ -114,15 +114,15 @@ nav {
 
 /* home page */
 .home {
-    height: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.home h1 {
-    font-size: 3.8rem;
+h1 {
+    font-size: 3.6rem;
     margin-bottom: 1rem;
     font-family: 'pacifico';
 }
@@ -156,3 +156,37 @@ nav {
 }
 
 /* --- */
+
+/* menu */
+
+.menuContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+}
+
+.menuHeadings {
+    grid-column: -1/1;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 0.5rem;
+    height: 100%;
+}
+
+.card h3 {
+    font-size: 1.6em;
+}
+
+.card p {
+    font-size: 1em;
+}
