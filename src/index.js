@@ -2,11 +2,12 @@ import './style.css';
 import landingPage from './landing-page.js';
 import menuPage from './menu.js';
 import aboutPage from './about.js';
+import footer from './footer.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     const content = document.getElementById('content');
     const home = document.getElementById('home');
-    const menu = document.querySelector('.menuButton');
+    const menu = document.getElementById('menu');
     const about = document.getElementById('about');
 
     // initial load
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     home.classList.add('active-page')
     content.className = ''
 
+    //  footer
+    footer();
 
     home.addEventListener('click', function () {
         content.innerHTML = ''; // empty content div

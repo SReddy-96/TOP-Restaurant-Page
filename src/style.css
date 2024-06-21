@@ -97,6 +97,7 @@ nav {
     background: none;
     color: white;
     margin: 0rem 0.5rem;
+    cursor: pointer;
 }
 
 .nav-button:hover {
@@ -119,7 +120,7 @@ nav {
 
 /* home page */
 .home {
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +147,8 @@ h1 {
     display: flex;
     align-items: center;
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    font-family: 'pacifico'
+    font-family: 'pacifico';
+    cursor: pointer;
 }
 
 #order-now:active {
@@ -204,8 +206,83 @@ h1 {
     color: transparent;
     text-shadow: 0 0 0 white;
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    cursor: pointer;
 }
 
 .priceButton:active {
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .8), inset -1px -1px 1px rgba(255, 255, 255, .4);
 }
+
+/* --- */
+
+/* about */
+
+.aboutContent {
+    min-height: 90vh;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutTitle {
+    font-size: 4em;
+    font-family: 'pacifico';
+    margin: 1rem 0;
+}
+
+.aboutDescription {
+    width: 80%;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+/* --- */
+
+/* contact */
+
+.contactWrapper {
+    padding: 1rem;
+}
+
+.contactTitle {
+    font-size: 2em;
+    font-family: 'pacifico';
+    margin-bottom: 1rem;
+}
+
+.howWrapper,
+.whenWrapper {
+    background-color: hsla(0, 0%, 0%, 0.75);
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .contactWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
+/* -- */
+
+/* footer */
+
+.footer {
+    height: 5vh;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    font-size: 0.8em;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- */
