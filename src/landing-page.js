@@ -1,7 +1,5 @@
 
-export default function landingPage() {
-    const content = document.getElementById('content');
-
+export default function landingPage(content) {
     const homeDiv = document.createElement('div');
     const h1 = document.createElement('h1');
     const p = document.createElement('p');
