@@ -8,7 +8,7 @@ export default function landingPage(content) {
     h1.textContent = "Nonna's Pizza";
     p.innerHTML = "Authentic Italian Flavors, <br/> Wood-Fired to Perfection.";
     button.id = "order-now";
-    button.textContent = "Order Now"
+    button.textContent = "Order Now";
 
     homeDiv.append(h1, p, button);
     homeDiv.className = "home";

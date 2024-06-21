@@ -122,11 +122,12 @@ export default function menuPage(content) {
 
                 const title = document.createElement('h3');
                 const description = document.createElement('p');
-                const price = document.createElement('p');
+                const price = document.createElement('button');
 
                 title.textContent = menu[i][j].title;
                 description.textContent = menu[i][j].description;
-                price.textContent = menu[i][j].price;
+                price.textContent = `${menu[i][j].price}  ➕`;
+                price.classList.add('priceButton');
 
                 card.append(title, description, price);
                 card.classList.add('card');

@@ -63,6 +63,11 @@ h6 {
 }
 
 /* --- */
+
+:root {
+    --pastel-red: #C23B22;
+}
+
 body {
     background: url('./home-background.jpg') rgba(0, 0, 0, 0.6);
     background-size: cover;
@@ -134,7 +139,7 @@ h1 {
 
 #order-now {
     background-color: white;
-    color: #C23B22;
+    color: var(--pastel-red);
     border: 1px solid black;
     border-radius: 12px;
     padding: 0.5rem 1rem;
@@ -142,13 +147,6 @@ h1 {
     align-items: center;
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
     font-family: 'pacifico'
-}
-
-#order-now svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 0.5rem;
-    fill: #C23B22;
 }
 
 #order-now:active {
@@ -176,11 +174,15 @@ h1 {
 
 .card {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.411);
     border-radius: 10px;
     color: black;
     padding: 0.5rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card h3 {
@@ -189,4 +191,21 @@ h1 {
 
 .card p {
     font-size: 1em;
+}
+
+.priceButton {
+    align-self: end;
+    padding: 5px 10px;
+    background-color: var(--pastel-red);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+.priceButton:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .8), inset -1px -1px 1px rgba(255, 255, 255, .4);
 }
