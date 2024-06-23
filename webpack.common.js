@@ -1,21 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
-    mode: 'development',
     entry: {
         index: './src/index.js',
-    },
-    devtool: 'inline-source-map',
-    devServer: {
-        static: './dist',
-        watchFiles: ['src/**/*.js', 'public/**/*'],
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Restaurant Page',
             template: './src/index.html',
-
         }),
     ],
     output: {
