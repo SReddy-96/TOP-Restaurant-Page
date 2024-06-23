@@ -5,7 +5,7 @@ export default function aboutPage(content) {
     title.textContent = "About";
     title.classList.add('aboutTitle');
 
-// about
+    // about
     const aboutDescription = document.createElement('div');
     aboutDescription.classList.add('aboutDescription');
     aboutDescription.innerHTML = "Welcome to Nonna's Pizza, where every slice is a taste of authentic Italian tradition.<br/> Our family-owned restaurant was born from Nonna's kitchen, carrying on her time-honored recipes that have been passed down for generations. Using only the freshest ingredients and imported Italian tomatoes, we craft each pizza with the same love and care that Nonna put into her cooking. <br/> From our signature Margherita with fresh basil and buffalo mozzarella, to classic favorites like the Pepperoni and Nonna's Special with Italian sausage and roasted peppers, our wood-fired oven creates that perfect crispy-yet-chewy crust. <br/> Stop in and experience a slice of Italy right here in our neighborhood pizzeria. <br/> At Nonna's, we don't just make pizza - we create edible memories with every bite."
@@ -32,6 +32,7 @@ export default function aboutPage(content) {
     map.width = "300";
     map.height = "300"
     map.style.border = 0;
+    map.style.borderRadius = '20px';
 
     whereWrapper.append(whereTitle, map);
     
