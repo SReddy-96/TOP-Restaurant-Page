@@ -1,5 +1,3 @@
-Your project description is well-written and informative. I'll make a few minor grammatical and stylistic adjustments while maintaining the overall tone and structure:
-
 # The Odin Project - Restaurant Page
 
 ## Objective
